@@ -1,5 +1,3 @@
 # OS-Simulator
 
-## Operating System Mini-Project
-This web-app simulates concepts of Operating system.
-It is HTML5, Bootstrap CSS, and Javascript based simulator.
+Web-app that simulates the various concepts of operating systems. Built using HTML5, CSS, Bootstrap and Javascript.
