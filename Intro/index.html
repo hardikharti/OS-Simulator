@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>OS Simulator</title>
+	<meta name="author" content="" />
+	<meta name="description" content="OS Project index page" />
+	<meta name="keywords"  content="Scheduling,Bankers,OS" />
+	<meta name="Resource-type" content="Document" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#d3d3d3', '#d3d3d3', '#a7b2a5', '#a7b2a5', '#d3d3d3', '#a7b2a5', '#d3d3d2' , '#d3d3d3'],
+				anchors: ['1stPage', '2ndPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage' , '8thpage'],
+				menu: '#menu',
+				easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+			});
+		});
+	</script>
+</head>
+<body>
+
+<ul id="menu">
+	<li data-menuanchor="1stPage"><a href="#1stPage">Home</a></li>
+	<li data-menuanchor="2ndPage"><a href="#2ndPage">CPU Scheduling</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Deadlock</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Secondary Storage</a></li>
+	<li data-menuanchor="5thpage"><a href="#5thpage">Synchronization</a></li>
+	<li data-menuanchor="6thpage"><a href="#6thpage">Contiguous Memory</a></li>
+	<li data-menuanchor="7thpage"><a href="#7thpage">File System</a></li>
+	<li data-menuanchor="8thpage"><a href="#8thpage">Non-contiguous Memory</a></li>
+</ul>
+
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1 style="color: black; text-shadow: 2px 2px #FF0000;">Operating System Simulator</h1>
+		<br>
+		<br>
+		<h4>Project By: (18CO211-220)</h4>
+		<br>
+		<br>
+		<br>
+		<table align="center">
+			<tr>
+				<td>Member 1 : </td>
+				<td>Atharva Joshi</td>
+				<td>(18CO211)</td>
+			</tr>
+			<tr>
+				<td>Member 2 : </td>
+				<td>B Gautam</td>
+				<td>(18CO212)</td>
+			</tr><tr>
+				<td>Member 3 : </td>
+				<td>Bhaskar Kataria</td>
+				<td>(18CO213)</td>
+			</tr><tr>
+				<td>Member 4 : </td>
+				<td>Chetan Kumar</td>
+				<td>(18CO214)</td>
+			</tr><tr>
+				<td>Member 5 : </td>
+				<td>Chinmay Gupta</td>
+				<td>(18CO215)</td>
+			</tr><tr>
+				<td>Member 6 : </td>
+				<td>Deepak Kumar</td>
+				<td>(18CO216)</td>
+			</tr><tr>
+				<td>Member 7 : </td>
+				<td>Dhanwin Rao</td>
+				<td>(18CO217)</td>
+			</tr><tr>
+				<td>Member 8 : </td>
+				<td>Dhruv Makwana</td>
+				<td>(18CO218)</td>
+			</tr><tr>
+				<td>Member 9 : </td>
+				<td>Gadilinga B</td>
+				<td>(18CO211)</td>
+			</tr><tr>
+				<td>Member 10: </td>
+				<td>Hardik Harti</td>
+				<td>(18CO220)</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div class="section" id="section1">
+		<div class="intro">
+			<div class="row">
+				<div class="column1">
+					<h1  style="color : #F2F3F4; text-shadow: 2px 2px 4px #000000"><a href="../CPU_Scheduling/index.html">CPU Scheduling</a></h1>
+				</div>
+				<div class="column1">
+					 <ul id="scheduling-style">
+  					 <li><a href="../CPU_Scheduling/src/sjf.html">Shortest Job First</a></li>
+					   <li><a href="../CPU_Scheduling/src/fcfs.html">First Come First Served</a></li>
+					   <li><a href="../CPU_Scheduling/src/multilevelQueue.html">Multilevel Queue</a></li>
+					   <li><a href="../CPU_Scheduling/src/rr.html">Round Robin</a></li>
+					   <li><a href="../CPU_Scheduling/src/priority.html">Priority Scheduling</a></li>
+					   <li><a href="../CPU_Scheduling/src/srtf.html">Shortest Remaining Time First</a></li>
+					 </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1  style="text-shadow: 2px 2px 4px #000000"><a href="../Deadlock/index.html" >Deadlock</a></h1>
+			<p>Banker's Algorithm for Deadlock Avoidance - Each time a process enters the system, as part of the <em>Resource-Request Algorithm</em>, we pretend to allocate requested resources to the process by modifying the state and then run the <em>Safety Algorithm</em>. If resulting state is safe, the resources are allocated to the process. Otherwise, the process must wait and the old resource-allocation state is restored, thereby avoiding deadlock.</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<div class="row">
+				<div class="column1">
+					<h1 style="color: #cccccc; text-shadow: 2px 2px #868432">Secondary Storage</h1>
+				</div>
+				<div class="column1">
+					 <ul id="d-scheduling-style">
+  					   <li><a href="../Disk/disk_schedule.html">1-Disk Scheduling</a></li>
+					   <li><a href="../Disk/lba.html">2-LBA</a></li>
+					 </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+			<div class="row">
+				<div class="column2">
+					<h1 style="color: #687279; text-shadow: 2px 2px 4px black">Process Synchronization</h1>
+				</div>
+				<div class="column2">
+					 <ul id="synchronization-style">
+					   <li><a href="../Process_Synchronization/dining.html">Dining Philosophers</a></li>
+					   <li><a href="../Process_Synchronization/producer_consumer.html">Producer Consumer</a></li>
+					   <li><a href="../Process_Synchronization/readerWriter.html">Reader Writer</a></li>
+					   <li><a href="../Process_Synchronization/sleepingBarber.html">Sleeping Barber</a></li>
+					 </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section5">
+		<div class="intro">
+			<div class="row">
+				<div class="column1">
+					<h1 style="color: #7899b3; text-shadow: 2px 2px 4px #9A7D0A;">Contiguous Memory</h1>
+				</div>
+				<div class="column1">
+					 <ul id="d-scheduling-style">
+  					   <li><a href="../MFT/index.html">MFT</a></li>
+					   <li><a href="../MVT/index.html">MVT</a></li>
+					 </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section" id="section6">
+		<div class="intro">
+			<h1 style="color: #99A3A4; text-shadow: 2px 2px 4px black"><a href="../File_System/index.html">File System</h1>
+			<p>File system represents data from a logical view point. The different directory structures for file systems covered here are single-level, two-level and tree-structured directory.</p>
+		</div>
+	</div>
+
+	<div class="section" id="section7">
+		<div class="intro">
+			<h1 text-shadow: 2px 2px 4px black><a href="../Page/pg.html">Non-contiguous Memory</h1>
+			<p>Paging is a memory management scheme that eliminates the need for contiguous allocation of physical memory.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

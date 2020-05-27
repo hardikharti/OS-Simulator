@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Process Scheduling</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../Intro/css/bootswatch.css" />
+    </head>
+    <body>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="../Intro/index.html#firstPage">Home</a>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../CPU_Scheduling/index.html">CPU Scheduling</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Disk/disk_schedule.html">Disk Scheduling</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Disk/lba.html">Logical Block Addressing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Deadlock/index.html">Deadlock</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../File_System/index.html">File System</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../MFT/index.html">MFT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../MVT/index.html">MVT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Page/pg.html">Paging</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Page/index.html">Page Replacement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Intro/index.html#5thpage">Process Synchronization</a>
+                </li>
+              </ul>
+              </div>
+        </nav>
+        <br>
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="display-3">Process Scheduling</h1>
+                <p class="lead">Process scheduling is an important task of the OS that ensures the best utilization of the CPU. Some of the process scheduling algorithms are - First-Come First Served, Shortest Job First, Shortest Remaining Time First, Priority, Round Robin and Multilevel Queue scheduling.</p>
+                <hr class="my-4">
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-4">
+                <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                  <div class="card-header">FCFS</div>
+                  <div class="card-body" >
+                    <h4 class="card-title">First Come First Served</h4>
+                    <p class="card-text">First Come First Serve (FCFS) is an operating system scheduling algorithm that automatically executes queued requests and processes in order of their arrival.. It is rarely used in modern operating systems.</p>
+                    <a class="btn btn-warning" href="src/fcfs.html" role="button">Go</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                  <div class="card-header">SJF</div>
+                  <div class="card-body">
+                    <h4 class="card-title">Shortest Job First</h4>
+                    <p class="card-text">SJF is a scheduling policy that selects the waiting process with the smallest execution time to execute next(non-preemptively). It is optimal but practically infeasible scheduling algorithm.</p>
+                    <a class="btn btn-warning" href="src/sjf.html" role="button">Go</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                  <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                  <div class="card-header">SRTF</div>
+                  <div class="card-body">
+                    <h4 class="card-title">Shortest Remaining Time First</h4>
+                    <p class="card-text">SRTF  is a scheduling method that is a preemptive version of SJF scheduling. In this scheduling algorithm, the process with the smallest amount of time remaining until completion is selected to execute.</p>
+                    <a class="btn btn-warning" href="src/srtf.html" role="button">Go</a>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+          <div class="row">
+
+
+
+            <div class="col-sm-4">
+              <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                <div class="card-header">Priority</div>
+                <div class="card-body">
+                  <h4 class="card-title">Priority Scheduling</h4>
+                  <p class="card-text">Priority scheduling is a method of scheduling processes based on priority. Same priority processes are executed on FCFS basis. Commonly used in batch systems.</p>
+                  <a class="btn btn-warning" href="src/priority.html" role="button">Go</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                <div class="card-header ">RR</div>
+                <div class="card-body">
+                  <h4 class="card-title">Round Robin Scheduling</h4>
+                  <p class="card-text">Round Robin Scheduling is a CPU scheduling algorithm that assigns CPU on basis of FCFS for fixed time called as time quantum.Once a process is executed for a given time period, it is preempted and other process executes for a given time period. . </p>
+                  <a class="btn btn-warning" href="src/rr.html" role="button">Go</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="card text-white bg-danger mb-3" style="max-width: 25rem;">
+                <div class="card-header">MLQS</div>
+                <div class="card-body">
+                  <h4 class="card-title">Multilevel Queue Scheduling</h4>
+                  <p class="card-text">A multi-level queue scheduling algorithm partitions the ready queue into several separate queues. The processes are permanently assigned to one queue, each with an assigned priority and its own scheduling algorithm. For the process in a queue to execute, all the queues of higher priority should be empty.</p>
+                  <a class="btn btn-warning" href="src/multilevelQueue.html" role="button">Go</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+	</body>
+</html>
